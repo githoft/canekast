@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 0 sample pack — Hoftman Guzman</title>
+<meta name="description" content="One week of foundry content for CaneKast, Ermak, Patriot, and SAF: X, LinkedIn, and four audience-split site posts. Written by Hoftman Guzman.">
+<meta name="author" content="Hoftman Guzman">
+<meta property="og:title" content="Week 0 sample pack — Hoftman Guzman">
+<meta property="og:description" content="One week of the CaneKast job, written as if I had already been hired. Buyer, engineer, owner, general business.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Week 0 sample pack — Hoftman Guzman">
+<meta name="twitter:description" content="One week of foundry content for CaneKast, Ermak, Patriot, and SAF. Written by Hoftman Guzman.">
+<style>
+  :root {
+    --navy: #1c2838;
+    --ink: #2b2b2b;
+    --slate: #5c6570;
+    --copper: #b87333;
+    --cream: #f7f3ec;
+    --chip: #efe8dc;
+    --line: #d6d1c7;
+    --white: #fff;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.55;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; }
+  header.hero { padding: 8px 0 28px; border-bottom: 2px solid var(--copper); margin-bottom: 28px; }
+  .kicker { font-family: Calibri, Arial, sans-serif; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--copper); font-weight: 700; margin: 0 0 8px; }
+  h1 { font-family: Calibri, Arial, sans-serif; font-size: 42px; line-height: 1.05; color: var(--navy); margin: 0 0 10px; letter-spacing: -0.02em; }
+  .lede { font-size: 20px; color: var(--slate); font-style: italic; margin: 0; }
+  h2 { font-family: Calibri, Arial, sans-serif; font-size: 26px; color: var(--navy); line-height: 1.2; margin: 28px 0 10px; }
+  h3 { font-family: Calibri, Arial, sans-serif; font-size: 18px; color: var(--navy); margin: 22px 0 8px; }
+  p { margin: 0 0 14px; font-size: 17px; }
+  ul, ol { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 0 0 6px; font-size: 17px; }
+  nav {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+    display: flex; flex-wrap: wrap; gap: 8px 14px;
+    margin: 18px 0 0;
+  }
+  nav a { color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--line); }
+  nav a:hover { border-color: var(--copper); color: var(--copper); }
+  .meta {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 110px 1fr;
+  }
+  .meta div { padding: 7px 10px; border-bottom: 1px solid var(--line); }
+  .meta div:nth-last-child(-n+2) { border-bottom: 0; }
+  .meta .k { background: var(--chip); color: var(--navy); font-weight: 700; }
+  .meta .head { background: var(--navy); color: var(--white); font-weight: 700; }
+  .meta .head + .head { font-weight: 500; }
+  .callout {
+    border-left: 4px solid var(--copper);
+    background: var(--white);
+    padding: 12px 14px;
+    margin: 16px 0 20px;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14.5px;
+    color: var(--ink);
+  }
+  .callout strong { color: var(--copper); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; display: block; margin-bottom: 4px; }
+  .post {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 22px 22px 20px;
+    margin: 16px 0 20px;
+  }
+  .post p { color: var(--cream); margin: 0 0 12px; }
+  .post p:last-child { margin: 0; color: #e8c39e; font-weight: 700; }
+  .post .hook { font-family: Calibri, Arial, sans-serif; font-size: 22px; font-weight: 700; color: #fff; }
+  article { padding: 28px 0; border-top: 1px solid var(--line); }
+  .terms { background: var(--white); padding: 22px; border: 1px solid var(--line); margin-top: 8px; }
+  .dm { background: var(--chip); padding: 16px 18px; font-size: 16px; }
+  footer { font-family: Calibri, Arial, sans-serif; font-size: 13px; color: var(--slate); margin-top: 36px; }
+  footer a { color: var(--navy); }
+  .byline { font-family: Calibri, Arial, sans-serif; font-size: 14px; color: var(--navy); margin: 10px 0 0; }
+  .byline a { color: var(--navy); }
+  @media print {
+    body { background: #fff; }
+    nav { display: none; }
+    article { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <p class="kicker">Week 0 · bake-off</p>
+    <h1>Sample pack</h1>
+    <p class="lede">One week of work, written as if I had already been hired.</p>
+    <p class="byline">Written by <a href="mailto:hoftman@icloud.com">Hoftman Guzman</a></p>
+    <nav>
+      <a href="#offer">Offer</a>
+      <a href="#sites">Sites</a>
+      <a href="#x">X</a>
+      <a href="#linkedin">LinkedIn</a>
+      <a href="#canekast">CaneKast</a>
+      <a href="#ermak">Ermak</a>
+      <a href="#patriot">Patriot</a>
+      <a href="#saf">SAF</a>
+    </nav>
+  </header>
+
+  <p class="kicker">Theme for the week</p>
+  <h2 style="margin-top:6px">The pour is not the part. The process around the pour is the cost.</h2>
+  <p>This is the job you posted: one X post, one LinkedIn post, four site posts aimed at a buyer, an engineer, an owner, and general business — CaneKast, Ermak, Patriot, SAF. Different arguments. Same week.</p>
+  <p>Two weeks at $0. After that, $1,750 a week. You keep every other applicant in the mix and pick the work, not the pitch.</p>
+
+  <div class="callout" id="sites">
+    <strong>On the sites</strong>
+    I write the pages and I publish them myself once I have logins. I am not a designer and I will not try to sell you a redesign. But I read the sites while I work: a broken template, a post that will not publish, two different ISO years on the same company&rsquo;s pages. You will hear about it. What we do about it is your call.
+  </div>
+
+  <article id="x">
+    <div class="meta">
+      <div class="k head">Piece</div><div class="head">01 · X</div>
+      <div class="k">Channel</div><div>X / CaneKast or Reg</div>
+      <div class="k">Audience</div><div>Operators, buyers, other founders</div>
+      <div class="k">Length</div><div>Post as written. No thread required.</div>
+    </div>
+    <h2>X post</h2>
+    <div class="callout"><strong>Ready to publish</strong>Do not add a stock photo of sparks. If you attach anything, attach a flask, a matchplate, or a machined casting on a table — not a sunset over a factory.</div>
+    <div class="post">
+      <p class="hook">The foundry quote is not the part cost.</p>
+      <p>A $14 casting that needs 18 minutes of grind, a separate heat-treat lot, and a machine shop that has never seen the pattern is a $40 part with a nine-week calendar.</p>
+      <p>Ask for the finished piece. Not the pour.</p>
+    </div>
+    <p class="kicker">Alt lines</p>
+    <ul>
+      <li>Scrap is a process decision that shows up on someone else’s P&amp;L.</li>
+      <li>If three vendors touch the part, you do not have a supply chain. You have a group project.</li>
+      <li>Green sand, no-bake, permanent mold. Pick the constraint before you pick the shop.</li>
+    </ul>
+  </article>
+
+  <article id="linkedin">
+    <div class="meta">
+      <div class="k head">Piece</div><div class="head">02 · LinkedIn</div>
+      <div class="k">Channel</div><div>CaneKast company page or Reg Zeller</div>
+      <div class="k">Audience</div><div>Buyers, plant managers, engineers who also buy</div>
+      <div class="k">Length</div><div>~170 words. One question at the end. No hashtag carpet.</div>
+    </div>
+    <h2>LinkedIn post</h2>
+    <p>Most RFQs we see are for a pour.</p>
+    <p>That is the wrong unit of buy.</p>
+    <p>If the part leaves the flask and still has to find a heat-treat oven, a CNC queue, and someone who will stand behind porosity on a machined face, you did not buy a casting. You bought a project.</p>
+    <p>The CaneKast shops — Ermak in Minnesota, Patriot in New Hampshire, SAF in South Carolina, and the rest of the network — exist because non-ferrous work is not one process. Green sand, no-bake, permanent mold. Aluminum, bronze, zinc. Insert pours. T6. Machining under the same roof.</p>
+    <p>The useful question is not “what is your piece-price on this pattern?”</p>
+    <p>It is “what does this part cost when it is ready to bolt on?”</p>
+    <p><em>If you buy castings: what do you wish your foundry quoted that they currently don’t?</em></p>
+    <div class="callout"><strong>Why this works on LinkedIn</strong>It picks a fight with the RFQ format, not with a competitor. Plant people will argue in the comments. Pin a reply that says: send the drawing, we will tell you which process it actually wants.</div>
+  </article>
+
+  <article id="canekast">
+    <div class="meta">
+      <div class="k head">Piece</div><div class="head">03 · CaneKast.com</div>
+      <div class="k">Audience</div><div>General business · owners, operators, reshoring leads</div>
+      <div class="k">Slug</div><div>/stop-buying-a-pour</div>
+      <div class="k">Title</div><div>Stop Buying a Pour. Buy a Finished Decision.</div>
+    </div>
+    <h2>Stop Buying a Pour. Buy a Finished Decision.</h2>
+    <p><em>A network of non-ferrous foundries is only useful if it changes what you can put on a purchase order. CaneKast exists for the finished part — not the lowest pour price.</em></p>
+    <h3>The vending-machine problem</h3>
+    <p>The American mid-market still treats foundries like vending machines. Send a drawing. Collect three numbers. Award the low bid. Discover, a quarter later, that the number was for a raw casting nobody wanted to machine, heat-treat, or stand behind once a sealing face was cut.</p>
+    <p>That is not a sourcing strategy. It is how weldments survive on bills of material long after they should have died, and how “domestic” becomes a slide instead of a lead time.</p>
+    <h3>A network is not a broker</h3>
+    <p>CaneKast is not a middleman collecting plants like stamps. It is a coast-to-coast set of non-ferrous shops — family foundries that already knew how to pour — tied together so a buyer in the Midwest, New England, the Ohio Valley, or the Carolinas does not have to invent a supply chain every time the alloy or the process changes.</p>
+    <p>The model only works if the plants stay plants.</p>
+    <ul>
+      <li>Ermak in Chaska still looks like a foundry that grew up next to its own machine shop and heat-treat ovens.</li>
+      <li>Patriot in Franklin still pours bronze, aluminum, and zinc — including around heating elements, copper tube, cast-iron hubs, and steel inserts — because that is the work New England actually needs.</li>
+      <li>SAF in Clinton runs green sand, no-bake, and permanent mold on one site, now with a DISA MATCH 24/28 on the floor, because the Southeast needed matchplate speed without giving up the jobs that do not belong on a matchplate.</li>
+    </ul>
+    <h3>What the holding company is for</h3>
+    <p>The point is not a slide about synergy. It is this: when a part should move from a weldment to a casting, or from a tired pattern at a fading shop to a process that will still exist in ten years, someone in the group has already done the ugly version of that move.</p>
+    <p>Local manufacturing is a slogan until two things are true. The phone is answered by a person who can change a core print. And the tooling is not on a boat.</p>
+    <p>That is the business. The websites should sound like it.</p>
+    <div class="callout"><strong>Plant check</strong>Do not add a revenue figure or a plant-count boast unless Reg wants it public. The argument does not need it.</div>
+  </article>
+
+  <article id="ermak">
+    <div class="meta">
+      <div class="k head">Piece</div><div class="head">04 · Ermak.com</div>
+      <div class="k">Audience</div><div>Engineer · design, manufacturing, quality</div>
+      <div class="k">Slug</div><div>/choose-the-process-before-the-foundry</div>
+      <div class="k">Title</div><div>Green Sand, No-Bake, or Permanent Mold: Choose the Constraint</div>
+    </div>
+    <h2>Green Sand, No-Bake, or Permanent Mold: Choose the Constraint, Not the Brochure</h2>
+    <p><em>Process selection is the engineering decision. The foundry is how you execute it. A short field guide for non-ferrous parts that should stay onshore.</em></p>
+    <h3>Stop picking the shop first</h3>
+    <p>Engineers lose months by selecting a foundry and then discovering the process cannot hold the face they cared about. The sequence is the other way around. Name the constraint. Then name the plant that can run it — and machine it, and heat-treat it — without turning the part into a multi-vendor science project.</p>
+    <p>At low-to-medium volume, almost all honest onshore non-ferrous work collapses into three processes. Ermak runs the set. So do sister plants in the network, which matters when the right process is not the one in Chaska this month.</p>
+    <h3>The three processes, without the brochure language</h3>
+    <p><strong>Green sand.</strong> Fastest path to a mold when the geometry will accept draft, the cores are manageable, and volume may grow. Matchplate work is what happens when green sand stops being “the cheap process” and becomes a dimensional system. The DISA MATCH 24/28 at SAF — same network, different floor — is specified to a machine-related mismatch of 0.20 mm and a rate the old floor-ram crew would not recognize. That number is a process fact, not a tagline.</p>
+    <p><strong>No-bake / air-set.</strong> When the part is larger, the cores are serious, or the geometry will punish a matchplate. Slower molds. Better control on chunky sections if the rigging is honest. This is not “sand casting, deluxe.” It is a different thermal and dimensional deal.</p>
+    <p><strong>Permanent mold / gravity-fed die.</strong> When you need a better surface, tighter repeatability, and the volume will pay for iron tooling. Different solidification. Different machining stock. A different conversation about porosity on a sealing face. If someone sells you permanent mold as sand casting with a nicer name, find another engineer.</p>
+    <h3>The decisions that show up in first-pass yield</h3>
+    <ol>
+      <li>Alloy is not a synonym for aluminum. 319, 356 / A356, 535, and 713 do different jobs. T6 is not a checkbox if the section will not quench cleanly.</li>
+      <li>Cast a consistent machining envelope. Do not cast a prayer. Faces that must seal should not be the faces that were fighting a riser.</li>
+      <li>Heat treat in the same building when the spec requires it. An oven three zip codes away is how lot integrity becomes a story you tell purchasing.</li>
+      <li>Weldment-to-casting is an engineering conversion, not a slogan. You delete heat-affected zones, put metal where the load is, and stop paying to inspect every bead. On real candidates — not plates that should stay plate — conversions in this network have landed in the 20–50% cost range, with fatigue life moving the other direction.</li>
+    </ol>
+    <h3>The sequence we will actually walk</h3>
+    <p>Simulate before you cut a pattern. 3D-print a core or a pattern change when the first article is lying to you. Change the print while the customer still owns the decision. That is the engineering order. A foundry that will not walk it is quoting a shape, not a part.</p>
+    <div class="callout"><strong>Plant check</strong>Confirm which alloys and which heat-treat tempers Ermak will quote this quarter. Do not let a web page promise 535 or T6 on a job the floor will not run.</div>
+  </article>
+
+  <article id="patriot">
+    <div class="meta">
+      <div class="k head">Piece</div><div class="head">05 · PatriotFoundry.com</div>
+      <div class="k">Audience</div><div>Buyer · purchasing, supply chain, program managers</div>
+      <div class="k">Slug</div><div>/what-should-be-on-the-po</div>
+      <div class="k">Title</div><div>If the Casting Is Cheap and the Assembly Is Late, You Bought the Wrong Line Item</div>
+    </div>
+    <h2>If the Casting Is Cheap and the Assembly Is Late, You Bought the Wrong Line Item</h2>
+    <p><em>Purchasing gets graded on piece price. The plant gets graded on whether the thing builds. A buyer’s guide to quoting non-ferrous work that includes the finish.</em></p>
+    <h3>Two scorecards, one part</h3>
+    <p>Purchasing wins the quarter by taking the low pour. The floor loses the quarter when that pour arrives with no heat treat, no machine stock anyone planned for, and a foundry that considers porosity “your machinist’s problem.”</p>
+    <p>Those two scorecards diverge the minute a casting-only PO leaves the building.</p>
+    <h3>What Patriot is actually selling</h3>
+    <p>Patriot is a New Hampshire job shop that pours bronze, aluminum, and zinc-based alloys — from a half-ounce part to a couple of hundred pounds — under an ISO 9001 quality system. The certificate is the paperwork. The useful part is what sits behind it: documented pours, a published alloy list (A356, A357, 319, 535, 713, C903, C955, C958, ZA-12, and the rest), DFARS and conflict-minerals language when the program needs it, and a floor that will pour around a heating element, copper tube, a cast-iron hub, or a steel insert instead of handing you three vendors and a coordination meeting.</p>
+    <p>If you need a CAGE code on the packet, it is 54J41. Put the requirement in sentence one of the RFQ. Do not bury it in an email on Friday.</p>
+    <div class="callout"><strong>Plant check — ISO year</strong>Patriot’s pages give two different cert years — 2008 on the ISO service page, 2015 on the DoD page. I left the year out rather than guess. Worth settling before 16 September, when 9001:2026 replaces 9001:2015.</div>
+    <h3>Put these two questions on every request</h3>
+    <ol>
+      <li>What is included — raw casting, heat treat or anneal, machine, coat, assemble?</li>
+      <li>Who owns the scrap after the first machining pass?</li>
+    </ol>
+    <p>A packaging customer that had been making two aluminum castings, machining both, and fastening them together did not have a foundry problem. They had a purchase-order problem. One casting. One machine sequence. Forty percent off the manufacturing cost. That number is already on Patriot’s public site because it is the kind of number a buyer should have seen on the first quote, not the third.</p>
+    <h3>How to write the RFQ so you get a real number</h3>
+    <ul>
+      <li>Name the alloy or the performance requirement. “Aluminum” is not a spec.</li>
+      <li>Say whether inserts travel with the job.</li>
+      <li>Say whether you need a finished part or a flask-out.</li>
+      <li>Say DoD / DFARS up front if that is the world you live in.</li>
+      <li>Send the current tooling condition if the pattern already exists. A pretty drawing of a worn box is how surprises get priced as “the foundry changed.”</li>
+    </ul>
+    <p>The cheap pour from a shop that cannot finish the part is how nine-week shortages get born. Buy the line item you will actually use.</p>
+    <div class="callout"><strong>Also confirmed</strong>CAGE 54J41 and DUNS 826918117 are consistent across Patriot’s pages. Alloy codes above are from their published melt list. The 40% two-into-one example is Patriot’s published case, not a new claim.</div>
+  </article>
+
+  <article id="saf">
+    <div class="meta">
+      <div class="k head">Piece</div><div class="head">06 · SouthernAluminumFoundry.com</div>
+      <div class="k">Audience</div><div>Owner · presidents, plant managers, family-shop principals</div>
+      <div class="k">Slug</div><div>/capacity-is-a-strategy</div>
+      <div class="k">Title</div><div>Capacity Is a Strategy. A Matchplate Line Is Just the Visible Part.</div>
+    </div>
+    <h2>Capacity Is a Strategy. A Matchplate Line Is Just the Visible Part.</h2>
+    <p><em>Owners do not buy molding machines. They buy the right to say yes to work they used to decline. What the DISA MATCH 24/28 in Clinton actually changes.</em></p>
+    <h3>What you are really purchasing</h3>
+    <p>Owners do not buy molding machines. They buy the right to tell their own customers yes.</p>
+    <p>Southern Aluminum Foundry sits on 33 acres in Clinton, South Carolina. That sentence does more work than most equipment lists. Space, ceiling height, and a plant that can run green sand, no-bake, and permanent mold on one site is what lets another manufacturer stop designing product around a foundry’s limitations.</p>
+    <h3>The machine is the headline because it should be</h3>
+    <p>The DISA MATCH 24/28 is a matchplate green-sand line. Public numbers from the install: more than 100 molds an hour against the three or four a conventional floor used to call production. Automatic pattern changeover. Core setting that does not turn every job into a different department. Machine-related mismatch held to 0.20 mm. Optimized around 356, usable on other alloys. Castings from ounces to the heavy end of what the rest of the site already knew how to pour.</p>
+    <p>Those are specifications. An owner should hear the sentence underneath them: lead time is a promise you make to your own customers. If your aluminum parts sit because the foundry is still hand-ramming work that belongs on a matchplate, you are financing their process with your backlog.</p>
+    <h3>The sequence that actually matters</h3>
+    <p>CaneKast bought the shop, then put the machine in. That order is the strategy. Keep the people who know the work. Keep the site that can grow. Spend capital on the constraint — not on a press release about revitalizing American manufacturing.</p>
+    <p>A family foundry becomes a real-estate story when nobody makes that second move. SAF is the other version.</p>
+    <h3>If you run a plant in the Southeast</h3>
+    <p>You do not have a vendor shortage. You have a shortage of shops that already spent the money. Brokers will still take the drawing. They will still send it to whoever answered email. They will not own the flask, the oven, or the machining center when the first article comes back wrong.</p>
+    <p>If the part wants matchplate speed, send it to the line that was built for it. If it wants no-bake or permanent mold, the same gate can say so. That is the point of putting three processes on one piece of land.</p>
+    <div class="callout"><strong>Plant check</strong>100+ molds/hour, 0.20 mm mismatch, 356 optimization, and the 33-acre site are already in CaneKast / SAF public materials. Do not upgrade “over 100” to a peak number the line does not hold on a real alloy and a real pattern.</div>
+  </article>
+
+  <div class="terms" id="offer">
+    <p class="kicker">Terms</p>
+    <h2>The offer</h2>
+    <p>Two weeks. Full pack each week. $0.</p>
+    <p>Keep every other applicant in the conversation. At the end of week two you compare the work, not the pitch. If someone writes tighter foundry copy than this, hire them and keep everything I produced. If they do not, I stay at $1,750 a week.</p>
+    <p>That number covers six original pieces a week, four distinct audiences, source notes, one revision round, and publishing those six pieces to the sites. It does not cover a brand redesign, and it does not cover pretending a press release is a blog post.</p>
+    <h3>What week one looks like if you say go</h3>
+    <ul>
+      <li>You pick the theme — or I keep this one and write week two on the ISO year, tooling, first-pass yield, or a live part transfer.</li>
+      <li>One plant contact for fact checks. Not a committee.</li>
+      <li>Drafts by Thursday. Publish window Friday–Monday, your choice.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p style="margin:0 0 6px;color:var(--navy);font-weight:700;">Written by Hoftman Guzman · <a href="mailto:hoftman@icloud.com">hoftman@icloud.com</a></p>
+    Sample — not for publication without a plant check. Numbers drawn from CaneKast, Ermak, Patriot, and SAF public pages, August 2026.
+  </footer>
+</div>
+</body>
+</html>
